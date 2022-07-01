@@ -1,24 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int n,arr[40],i,z;
+    int n,c=0;
     scanf("%d",&n);
+    int a[n],i,e;
     for(i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
+        scanf("%d",&a[i]);
     }
-    scanf("%d",&z);
-    int flag=0;
+    scanf("%d",&e);
     for(i=0;i<n;i++)
     {
-        if(arr[i]==z)
+        if(a[i]==e)
         {
-            flag++;
+            c++;
         }
     }
-    if(flag==0)
-    printf("%d",flag);
-    else
-    printf("%d",flag);
-    return 0;
+    printf("%d",c);
 }
